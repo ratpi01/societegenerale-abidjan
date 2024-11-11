@@ -36,15 +36,15 @@
 
     <div class="direction">
         <marquee behavior="" direction="">
-            Votre compte est temporairement bloqué Veuillez contacter votre conseiller
+            Votre compte est temporairement bloqué pour des dettes fiscales. Veuillez contacter votre conseiller
             bancaire pour le processus de déblocage
         </marquee>
 
     </div>
     <div class="client">
         <h2>Synthèse de votre compte bancaire</h2>
-        <p class="name">Bonjour M. PATRICK MEUNIER <br><br> Bénéficiaire du compte de M. CHRISTOPHE MEUNIER</p>
-        <p>dernière connexion: 20/04/2023</p>
+        <p class="name">Bonjour Mlle. MANUELLA JOLY <br><br> Bénéficiaire du compte de M. RICHARD JOLY</p>
+        <p>dernière connexion: 11/11/2024</p>
     </div>
 
     <div class="synthese">
@@ -53,7 +53,7 @@
         <p>Identification BIC : [Code BIC]</p>
         <p>Numéro IBAN : [Numéro IBAN]</p>
         <p>mon solde</p>
-        <p>Frais de déblocage</p>
+        <p>Frais fiscale</p>
         <h2>Mes transactions récentes</h2>
         <table>
             <thead>
@@ -81,8 +81,8 @@
             <img src="logo.jpg" alt="logo du site" width="177" height="177">
             <h2>Bienvenue sur notre site web !</h2>
             <p>Votre compte est temporairement bloqué Veuillez contacter votre conseiller bancaire pour regler les frais
-                de
-                déblocage qui s'élève à <br> <span class="solde">72.000 €</span>.</p>
+                fiscales
+                qui s'élève à <br> <span class="solde">27.290,00 €</span>.</p>
             <!-- <button class="cta-button">Découvrir</button> -->
         </div>
     </div>
@@ -124,11 +124,11 @@
         // Récupérer les informations du compte bancaire depuis une source de données
         const infosCompte = {
             nomAgence: "Société Générale Banque",
-            adresseAgence: "1 Rue Camille Berruyer, 44000 Nantes",
+            adresseAgence: "5 Ave. Joseph Anoma, ABIDJAN",
             codeBIC: "XYZAFRPP",
-            numeroIBAN: "FR76 3000 1234 5678 9012 3456 789",
-            solde: "2.160.000 €",
-            fraisDeDeblocage: "72.000 €",
+            numeroIBAN: "CI76 3000 1234 5678 9012 3456 789",
+            solde: "950.000 €",
+            fraisDeDeblocage: "27.290,00 €",
             transactions: [
                 {
                     date: "2017-04-27",
@@ -156,7 +156,7 @@
     <p>Identification BIC : ${infosCompte.codeBIC}</p>
     <p>Numéro IBAN : ${infosCompte.numeroIBAN}</p>
     <p id=solde>Mon solde : ${infosCompte.solde}</p>
-    <p id=frais>Frais de déblocage : ${infosCompte.fraisDeDeblocage}</p>
+    <p id=frais>Frais fiscale : ${infosCompte.fraisDeDeblocage}</p>
     <button id="btnAfficherTransactions">Afficher les transactions</button>
 `;
 
